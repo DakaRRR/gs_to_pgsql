@@ -16,7 +16,7 @@
    ```sh
    git clone https://github.com/DakaRRR/gs_to_pgsql.git
    ```
-2. Зарузить библииотеки.
+2. Зарузить библиотеки.
    ```sh
    pip install -r requirements.txt
    ```
