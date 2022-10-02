@@ -37,16 +37,17 @@
 ```sh
    cd orders
  ```
- Прописать 
+Создание и установка миграций и запуск локального серверва.
  ```sh
    python manage.py makemigrations 
    python manage.py migrate
    python manage.py runserver
  ```
  Перейти по локальному адресу - результат должен быть таким:
- ```
+
  ![image](https://user-images.githubusercontent.com/82327788/193458708-b65b624d-01b9-4b7f-97db-1f4d72b74df0.png)
- ```
+
+
 
 
  
