@@ -79,7 +79,7 @@ def delete_orders(CONNECTION, CURSOR, orders):
     '''Удаляет записи о заказах, которых более нет в исходном файле Google Sheets'''
     if len(orders) == 1:
         orders = f'({orders[0]})'
-    delete_query = f'''delete from orders where "заказ №" in {orders}'''
+    delete_query = f'''delete from orders_app_order where "заказ №" in {orders}'''
     CURSOR.execute(delete_query)
     CONNECTION.commit()
 
@@ -98,6 +98,8 @@ def load_database_list(CURSOR):
 
 
 def main():
+    sa = gspread.service_account(filename=JSON_FILE_NAME)
+
     while True:
         # Подключение к БД PostgreSQL
         CONNECTION, CURSOR = connect_to_database()
