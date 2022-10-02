@@ -21,7 +21,7 @@
    pip install -r requirements.txt
    ```
 3. Создать проект в https://console.cloud.google.com/welcome?project=test-gs-363914. Далее подключить два API - Google Drive, Google Sheets. 
-4. Для получения json файла с тестовыми учетными данными нужно -> "CREATE CREDENTIALS" -> "OAuth client ID" -> "выбрать тип приложения и название токена" -> "Нажать на    кнопку Скачать". 
+4. Для получения json файла с тестовыми учетными данными нужно -> "CREATE CREDENTIALS" -> "OAuth client ID" -> "выбрать тип приложения и название токена" -> "Нажать на    кнопку Скачать".Лучше всего данный файл переместить в папку sheet-to-postgres :).
 5. Пропишите данные в env файл, в данном формате:
    ```sh
    POSTGRES_DB_NAME=your_db
