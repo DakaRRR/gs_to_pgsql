@@ -12,20 +12,27 @@
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
 1. Клонировать данный репозиторий 
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
 2. С активированным вирутальный окружением нужно прописать
-  ```sh
-  pip install -r requirements.txt
-  ```
+   ```sh
+   pip install -r requirements.txt
+   ```
 3. Создать проект в https://console.cloud.google.com/welcome?project=test-gs-363914. Далее подключить два API - Google Drive, Google Sheets. 
-4. Для получения json файла с тестовыми учетными данными нужно -> "CREATE CREDENTIALS" -> "OAuth client ID" -> "выбрать тип приложения и название токена" -> "Нажать на      кнопку Скачать". 
+4. Для получения json файла с тестовыми учетными данными нужно -> "CREATE CREDENTIALS" -> "OAuth client ID" -> "выбрать тип приложения и название токена" -> "Нажать на    кнопку Скачать". 
 5. Пропишите данные в env файл, в данном формате:
-   ![image](https://user-images.githubusercontent.com/82327788/193458051-406c3091-710e-4257-86a6-09e64db9e93d.png)
+   ```sh
+   POSTGRES_DB_NAME=your_db
+   POSTGRES_HOST=127.0.0.1
+   POSTGRES_USER=your_user
+   POSTGRES_PASSWORD=2105
+   POSTGRES_PORT=5432
+   JSON_FILE_NAME=json_filename
+   GOOGLE_SHEET_NAME=test
+   GOOGLE_SHEET_LIST_NAME=Лист1
+   ```
  
 
 
