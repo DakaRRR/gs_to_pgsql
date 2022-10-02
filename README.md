@@ -3,7 +3,7 @@
 ## О проекте
 
 Проект на Python для считывания данных с Google Sheets в PostgreSQL. Скрипт постоянно обновляет данные по таблице, а так же курса рубля к доллару по ЦБ РФ.
-Так же имеется одностраничное web-приложение на Django, для отрисовки графика.
+Разработано одностраничное web-приложения на основе Django.
 
 ## Начало работы
 
@@ -27,12 +27,28 @@
    POSTGRES_DB_NAME=your_db
    POSTGRES_HOST=127.0.0.1
    POSTGRES_USER=your_user
-   POSTGRES_PASSWORD=2105
+   POSTGRES_PASSWORD=your_password
    POSTGRES_PORT=5432
    JSON_FILE_NAME=json_filename
    GOOGLE_SHEET_NAME=test
    GOOGLE_SHEET_LIST_NAME=Лист1
    ```
+Для запуска скрипта этого уже достаточно. Но для работы с веб-сайтом требуется перейти в папку orders.
+```sh
+   cd orders
+ ```
+ Прописать 
+ ```sh
+   python manage.py makemigrations 
+   python manage.py migrate
+   python manage.py runserver
+ ```
+ Перейти по локальному адресу - результат должен быть таким:
+ ```
+ ![image](https://user-images.githubusercontent.com/82327788/193458708-b65b624d-01b9-4b7f-97db-1f4d72b74df0.png)
+ ```
+
+
  
 
 
