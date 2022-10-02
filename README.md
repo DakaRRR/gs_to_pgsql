@@ -16,7 +16,7 @@
    ```sh
    git clone https://github.com/DakaRRR/gs_to_pgsql.git
    ```
-2. С активированным вирутальный окружением нужно прописать
+2. Зарузить библииотеки.
    ```sh
    pip install -r requirements.txt
    ```
