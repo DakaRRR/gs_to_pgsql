@@ -14,7 +14,7 @@
 
 1. Клонировать данный репозиторий 
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/DakaRRR/gs_to_pgsql.git
    ```
 2. С активированным вирутальный окружением нужно прописать
    ```sh
